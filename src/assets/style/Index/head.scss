@@ -1,0 +1,68 @@
+.head {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.header {
+  // background-color: #fff;
+  height: 45px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  text-align: center;
+  i {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  .information {
+    width: 3.5rem;
+  }
+  .input {
+    margin-top: .8rem;
+    flex: 3;
+    position: relative;
+    input {
+      width: 85%;
+      height: 1.7rem;
+      border-radius: .8rem;
+      background-color: #eff1f4;
+      opacity: .5;
+      padding-left: 2rem;
+    }
+  }
+  .playHistory {
+    width: 2.4rem;
+    margin-left: .5rem;
+  }
+  .download {
+    width: 2rem;
+    margin-right: .8rem;
+  }
+  .icon-search {
+    font-size: 1rem;
+    color: #ccc;
+    position: absolute;
+    left: .6rem;
+    top: -.7rem;
+  }
+}
+.nav {
+  margin-top: .8rem;
+  height: 2.08rem;
+  overflow: hidden;
+  li {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: .6rem;
+    color: #666;
+    &.active {
+      color: #f86442;
+      border-bottom: 1.5px solid #f86442;
+    }
+  }
+}

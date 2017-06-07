@@ -1,0 +1,57 @@
+.header {
+  height: 45px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  text-align: center;
+  color: #000;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  .back {
+    width: 3rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  p {
+    flex: 1;
+    font-size: 1.2rem;
+  }
+  .edit {
+    width: 2.4rem;
+    margin-right: .5rem;
+  }
+  .set {
+    width: 2rem;
+    margin-right: .5rem;
+  }
+}
+.list {
+  li {
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    height: 3rem;
+    i:first-child {
+      margin-top: .1rem;
+      font-size: 1.5rem;
+      background-color: yellow;
+      border-radius: 50%;
+      width: 2.6rem;
+      height: 2.6rem;
+      text-align: center;
+      line-height: 2.6rem;
+      margin-left: .5rem;
+      margin-right: .5rem;
+    }
+    span {
+      flex: 1;
+      line-height: 3rem;
+    }
+    i:last-child {
+      width: 1rem;
+      line-height: 3rem;
+    }
+  }
+}

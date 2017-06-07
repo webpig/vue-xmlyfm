@@ -1,0 +1,150 @@
+.banner {
+  margin-top: 5.7rem;
+  height: 11rem;
+  img {
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+}
+.scroll {
+  width: 100%;
+  height: 3rem;
+  padding: 1rem 0 1.2rem 0;
+  color: #333;
+  overflow: hidden;
+  li {
+    display: inline-block;
+    width: 16.5%;
+    text-align: center;
+    i {
+      display: inline-block;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      line-height: 1.8rem;
+      color: #fff;
+      &.fa-trophy {
+        background-color: #f09eae;
+      }
+      &.fa-star {
+        background-color: #82e2d1;
+      }
+      &.fa-book {
+        background-color: #f5a882;
+      }
+      &.fa-map-marker {
+        background-color: #bed497;
+      }
+      &.fa-music {
+        background-color: #f7d073;
+      }
+      &.fa-user {
+        background-color: #82d0e2;
+      }
+    }
+    p {
+      font-size: .5rem;
+      line-height: 1.5rem;
+    }
+  }
+  border-bottom: .5rem solid #f3f4f5;
+}
+.fmlist {
+  .header {
+    padding: .7rem;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    .primary {
+      flex: 1;
+      color: #111;
+      font-size: 1.1rem;
+    }
+    .more {
+      padding-top: .15rem;
+      width: 3rem;
+      color: #666;
+      font-size: .9rem;
+      i {
+        margin-left: .5rem;
+      }
+    }
+  }
+  .content {
+    padding-left: 0.5rem;
+    li {
+      width: 33.333333%;
+      float: left;
+      height: 10rem;
+      margin-bottom: 1.2rem;
+      p {
+        width: 90%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: .85rem;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
+      img {
+        width: 93%;
+        height: 70%;
+        margin-bottom: .5rem;
+      }
+    }
+  }
+  .footer {
+    line-height: 2.6rem;
+    height: 2.6rem;
+    text-align: center;
+    border-top: 1px solid #f3f4f5;
+    border-bottom: .5rem solid #f3f4f5;
+    i {
+      margin-left: .5rem;
+      color: #ccc;
+    }
+  }
+  .sortfm {
+    .content-y {
+      padding: 0 1rem;
+      li {
+        height: 4.5rem;
+        margin-bottom: 2rem;
+        &:not(:last-child)::after {
+          content: '';
+          display: block;
+          width: 75%;
+          height: 1px;
+          background-color: #ccc;
+          position: absolute;
+          right: 0;
+          transform: translateY(1rem);
+        }
+        img {
+          height: 4.5rem;
+          width: 4.5rem;
+          float: left;
+          margin-right: 1rem;
+        }
+        .primary {
+          overflow: hidden;
+          height: 4.5rem;
+          position: relative;
+          p {
+            line-height: 1.5rem;
+            &.intro {
+              font-size: .9rem;
+              color: #aaa;
+            }
+            span {
+              font-size: .8rem;
+              margin-right: .5rem;
+              color: #aaa;
+            }
+          }
+        }
+      }
+    }
+  }
+}
