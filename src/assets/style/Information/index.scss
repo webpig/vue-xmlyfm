@@ -27,8 +27,8 @@
 }
 .list {
   li {
-    background-color: #eee;
-    border-top: 1px solid #ccc;
+    background-color: #f3f4f5;
+    border-top: 1px solid #ddd;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -36,7 +36,7 @@
     i:first-child {
       margin-top: .1rem;
       font-size: 1.5rem;
-      background-color: yellow;
+      background-color: #82e2d1;
       border-radius: 50%;
       width: 2.6rem;
       height: 2.6rem;
@@ -44,6 +44,7 @@
       line-height: 2.6rem;
       margin-left: .5rem;
       margin-right: .5rem;
+      color: #fff;
     }
     span {
       flex: 1;

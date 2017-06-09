@@ -1,18 +1,18 @@
 <template lang="html">
-  <div class="">
-    <my-head></my-head>
+  <div class="main">
+    <my-navbar></my-navbar>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Head from './Head'
+import NavBar from '@/components/Navbar'
 export default {
   components: {
-    'my-head': Head
+    'my-navbar': NavBar
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="css">
 </style>

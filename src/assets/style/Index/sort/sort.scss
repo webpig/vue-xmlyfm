@@ -1,0 +1,24 @@
+.sort {
+  margin-bottom: 4rem;
+  margin-top: 5.7rem;
+  .sort-section {
+    height: 8rem;
+    border-bottom: .5rem solid #f3f4f5;
+    i {
+      color: #f86442;
+      margin: 0 .7rem;
+      font-size: 1.2rem;
+    }
+    .sort-item {
+      border-top: 1px solid #eee;
+      display: inline-block;
+      width: 49.5%;
+      height: 33.333333%;
+      color: #666;
+      line-height: 2.6rem;
+      &:nth-of-type(odd) {
+        border-right: 1px solid #eee;
+      }
+    }
+  }
+}

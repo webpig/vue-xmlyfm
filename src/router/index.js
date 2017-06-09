@@ -6,28 +6,56 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '',
-      component: require('@/pages/Index/Index.vue'),
+      path: '/',
+      component: require('@/pages/index.vue'),
+      redirect: '/main/hot',
       children: [
         {
-          path: '/',
-          component: require('@/pages/Index/hot/Index.vue')
+          path: '/main',
+          name: '首页',
+          component: require('@/pages/Home/main.vue'),
+          children: [
+            {
+              path: '/main/hot',
+              name: '热门',
+              component: require('@/pages/Index/hot.vue')
+            },
+            {
+              path: '/main/sort',
+              name: '分类',
+              component: require('@/pages/Index/sort.vue')
+            },
+            {
+              path: '/main/fine',
+              name: '精品',
+              component: require('@/pages/Index/fine.vue')
+            },
+            {
+              path: '/main/live',
+              name: '直播',
+              component: require('@/pages/Index/live.vue')
+            },
+            {
+              path: '/main/broadcast',
+              name: '广播',
+              component: require('@/pages/Index/broadcast.vue')
+            }
+          ]
         },
         {
-          path: '/sort',
-          component: require('@/pages/Index/sort/Index.vue')
+          path: '/subscribe',
+          name: '订阅',
+          component: require('@/pages/Home/subscribe.vue')
         },
         {
-          path: '/fine',
-          component: require('@/pages/Index/fine/Index.vue')
+          path: '/find',
+          name: '发现',
+          component: require('@/pages/Home/find.vue')
         },
         {
-          path: '/live',
-          component: require('@/pages/Index/live/Index.vue')
-        },
-        {
-          path: '/broadcast',
-          component: require('@/pages/Index/broadcast/Index.vue')
+          path: '/my',
+          name: '我的',
+          component: require('@/pages/Home/my.vue')
         }
       ]
     },

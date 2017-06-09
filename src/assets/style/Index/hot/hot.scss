@@ -72,6 +72,7 @@
     }
   }
   .content {
+    overflow: hidden;
     padding-left: 0.5rem;
     li {
       width: 33.333333%;
@@ -116,7 +117,7 @@
           display: block;
           width: 75%;
           height: 1px;
-          background-color: #ccc;
+          background-color: #eee;
           position: absolute;
           right: 0;
           transform: translateY(1rem);

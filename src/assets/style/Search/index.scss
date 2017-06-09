@@ -5,10 +5,12 @@
   display: flex;
   padding: 1rem;
   .back {
+    overflow: hidden;
     font-weight: 700;
     float: left;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin-right: 1rem;
+    line-height: 2rem;
   }
   input {
     height: 2rem;
@@ -23,11 +25,8 @@
     }
   }
   .search-btn {
-    // position: absolute;
     margin-left: 1rem;
     float: right;
-    // right: .8rem;
-    // font-size: .9rem;
     color: #f86442;
     line-height: 2rem;
   }

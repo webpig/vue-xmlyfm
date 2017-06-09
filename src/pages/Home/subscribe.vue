@@ -1,6 +1,6 @@
 <template lang="html">
-  <div class="">
-    sort
+  <div class="subscribe">
+    <router-view></router-view>
   </div>
 </template>
 

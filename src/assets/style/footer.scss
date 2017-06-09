@@ -7,4 +7,27 @@
   left: 0;
   right: 0;
   background-color: #fff;
+  .item {
+    width: 20%;
+    float: left;
+    text-align: center;
+    i {
+      font-size: 1.5rem;
+      margin-top: .2rem;
+      color: #666;
+    }
+    p {
+      transform: scale(.6);
+      margin-top: -.2rem;
+      color: gray;
+    }
+  }
+  .router-link-exact-active{
+    i {
+      color: #f86442;
+    }
+    p {
+      color: #f86442;
+    }
+  }
 }

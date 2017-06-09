@@ -152,5 +152,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../assets/style/Index/hot/hot.scss';
+@import '../../assets/style/Index/hot/hot.scss';
 </style>

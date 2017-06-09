@@ -1,14 +1,11 @@
-.head {
+.header {
   z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #fff;
-}
-.header {
-  // background-color: #fff;
-  height: 45px;
+  height: 55px;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -26,7 +23,7 @@
     flex: 3;
     position: relative;
     input {
-      width: 85%;
+      width: 100%;
       height: 1.7rem;
       border-radius: .8rem;
       background-color: #eff1f4;
@@ -36,7 +33,7 @@
   }
   .playHistory {
     width: 2.4rem;
-    margin-left: .5rem;
+    margin-left: 2.2rem;
   }
   .download {
     width: 2rem;
@@ -48,21 +45,5 @@
     position: absolute;
     left: .6rem;
     top: -.7rem;
-  }
-}
-.nav {
-  margin-top: .8rem;
-  height: 2.08rem;
-  overflow: hidden;
-  li {
-    width: 20%;
-    display: inline-block;
-    text-align: center;
-    padding-bottom: .6rem;
-    color: #666;
-    &.active {
-      color: #f86442;
-      border-bottom: 1.5px solid #f86442;
-    }
   }
 }
