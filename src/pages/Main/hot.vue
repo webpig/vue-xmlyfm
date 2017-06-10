@@ -3,7 +3,9 @@
     <div class="banner">
       <mt-swipe :auto="8000" :speed="1000">
         <mt-swipe-item v-for="data in banner" key="data.id">
-          <img :src="data.src">
+          <router-link to="/fm">
+            <img :src="data.src">
+          </router-link>
         </mt-swipe-item>
       </mt-swipe>
     </div>

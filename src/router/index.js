@@ -12,33 +12,32 @@ export default new Router({
       children: [
         {
           path: '/main',
-          name: '首页',
           component: require('@/pages/Home/main.vue'),
           children: [
             {
               path: '/main/hot',
               name: '热门',
-              component: require('@/pages/Index/hot.vue')
+              component: require('@/pages/Main/hot.vue')
             },
             {
               path: '/main/sort',
               name: '分类',
-              component: require('@/pages/Index/sort.vue')
+              component: require('@/pages/Main/sort.vue')
             },
             {
               path: '/main/fine',
               name: '精品',
-              component: require('@/pages/Index/fine.vue')
+              component: require('@/pages/Main/fine.vue')
             },
             {
               path: '/main/live',
               name: '直播',
-              component: require('@/pages/Index/live.vue')
+              component: require('@/pages/Main/live.vue')
             },
             {
               path: '/main/broadcast',
               name: '广播',
-              component: require('@/pages/Index/broadcast.vue')
+              component: require('@/pages/Main/broadcast.vue')
             }
           ]
         },
@@ -66,6 +65,10 @@ export default new Router({
     {
       path: '/information',
       component: require('@/pages/Information/Index.vue')
+    },
+    {
+      path: '/fm',
+      component: require('@/pages/FMDetails/Index.vue')
     }
   ]
 })
